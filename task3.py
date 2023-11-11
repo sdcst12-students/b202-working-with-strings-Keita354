@@ -9,16 +9,16 @@ this function returns the length of the string
 (2 points)
 '''
 
-def split(input):
-    '''
-    parameters
-    str input - string to be split
-    
-    return
-    str new string with line break in the middle
-    '''
+def split(input_str):
+    length = len(input_str)
+    middle = length // 2
+    first_half = input_str[:middle]
+    second_half = input_str[middle:]
+    if input_str[middle - 1] != ' ' and input_str[middle] != ' ':
+        first_half += '-'
+    result = first_half + '\n' + second_half
 
-    return
+    return result
 
 if __name__ == "__main__":
     sentence = "There is a big balloon in the blue sky"

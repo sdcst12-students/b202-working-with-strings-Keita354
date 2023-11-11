@@ -8,7 +8,8 @@ ranks = "A23456789TJQK"
 suits = "CDHS"
 
 def createDeck():
-  return 
+  deck = [rank +suit for suit in suits for rank in ranks]
+  return deck
 
 def main():
   deck = createDeck()

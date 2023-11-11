@@ -5,7 +5,7 @@ Take a string and make sure that it is a proper sentence, with only the first le
 (2 points)
 '''
 
-def properCaps(input):
+def properCaps(input_str):
     '''
     parameters:
     str input - string to fix capitalization for
@@ -13,7 +13,8 @@ def properCaps(input):
     return
     str - proper capitalized string
     '''
-    return
+    proper_sentence = input_str.capitalize()
+    return proper_sentence
 
 
 if __name__ == "__main__":
